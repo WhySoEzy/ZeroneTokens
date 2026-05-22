@@ -68,6 +68,7 @@
   --space-gap-48px: var(--number-48px);
   --space-gap-56px: var(--number-56px);
   --space-gap-64px: var(--number-64px);
+  --space-gap-80px: var(--number-80px);
 
   /* inset */
   --space-inset-2px: var(--number-2px);
@@ -82,5 +83,5 @@
   --space-inset-48px: var(--number-48px);
   --space-inset-56px: var(--number-56px);
   --space-inset-64px: var(--number-64px);
+  --space-inset-80px: var(--number-80px);
 }
-
