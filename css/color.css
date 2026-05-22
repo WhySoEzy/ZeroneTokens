@@ -1,6 +1,6 @@
 :root {
   /* === Global === */
-  /* Brand */
+  /* -- Brand -- */
   --color-cornflower-50: #f0f2fa;
   --color-cornflower-100: #e2e5f6;
   --color-cornflower-200: #cad1f6;
@@ -18,7 +18,7 @@
   --color-cornflower-alpha-40: #6880f666;
   --color-cornflower-alpha-50: #6880f680;
 
-  /* Grey */
+  /* -- Grey -- */
   --color-grey-50: #f0f1f5;
   --color-grey-100: #dadbe0;
   --color-grey-200: #bfc1c7;
@@ -31,7 +31,7 @@
   --color-grey-900: #121214;
   --color-grey-950: #09090a;
 
-  /* White */
+  /* -- White -- */
   --color-white-100: #f5f5f5;
   --color-white-200: #f7f7f7;
   --color-white-300: #fafafa;
@@ -47,7 +47,7 @@
   --color-white-alpha-80: #ffffffcc;
   --color-white-alpha-90: #ffffffe5;
 
-  /* Black */
+  /* -- Black -- */
   --color-black-10: #0000001a;
   --color-black-100: #000000;
   --color-black-20: #00000033;
@@ -60,7 +60,7 @@
   --color-black-80: #000000cc;
   --color-black-90: #000000e5;
 
-  /* Blue */
+  /* -- Blue -- */
   --color-blue-100: #d1ddff;
   --color-blue-200: #b8c9ff;
   --color-blue-300: #9eb6ff;
@@ -82,7 +82,7 @@
   --color-blue-dark-40: #1f2c4d;
   --color-blue-dark-50: #243359;
 
-  /* Green */
+  /* -- Green -- */
   --color-green-100: #bbf0d4;
   --color-green-200: #91e5bb;
   --color-green-300: #5ed89b;
@@ -104,7 +104,7 @@
   --color-green-dark-40: #1a402d;
   --color-green-dark-50: #1f4d36;
 
-  /* Orange */
+  /* -- Orange -- */
   --color-orange-100: #fad9be;
   --color-orange-200: #f5c7a2;
   --color-orange-300: #f0b586;
@@ -126,7 +126,7 @@
   --color-orange-dark-40: #4d331f;
   --color-orange-dark-50: #593b24;
 
-  /* Red */
+  /* -- Red -- */
   --color-red-100: #ffc7c7;
   --color-red-200: #ffadad;
   --color-red-300: #ff9494;
@@ -148,7 +148,7 @@
   --color-red-dark-40: #401a1a;
   --color-red-dark-50: #4d1f1f;
 
-  /* Yellow */
+  /* -- Yellow -- */
   --color-yellow-100: #faecbe;
   --color-yellow-200: #f5e2a2;
   --color-yellow-300: #f0d886;
@@ -171,7 +171,7 @@
   --color-yellow-dark-50: #4d421f;
 
   /* === Alias: color === */
-  /* Light */
+  /* -- Light -- */
   /* Brand */
   --brand-primary: var(--color-cornflower-600);
   --brand-secondary: var(--color-cornflower-800);
@@ -195,75 +195,94 @@
   --bg-base-tertiary: var(--color-grey-100);
   --bg-base-quaternary: var(--color-grey-200);
 
+  /* base / inverse */
   --bg-base-inverse-primary: var(--color-grey-900);
   --bg-base-inverse-secondary: var(--color-grey-800);
   --bg-base-inverse-tertiary: var(--color-grey-700);
 
+  /* base / pure */
   --bg-base-pure-black: var(--color-black-100);
   --bg-base-pure-white: var(--color-white-500);
 
+  /* Brand */
   --bg-brand-primary: var(--brand-primary);
   --bg-brand-secondary: var(--brand-secondary);
   --bg-brand-tertiary: var(--brand-tertiary);
 
+  /* brand / inverse */
   --bg-brand-inverse-primary: var(--color-white-500);
   --bg-brand-inverse-secondary: var(--color-grey-50);
   --bg-brand-inverse-tertiary: var(--color-grey-100);
 
+  /* dim / blue */
   --bg-dim-blue-primary: var(--color-blue-50);
   --bg-dim-blue-secondary: var(--color-blue-100);
   --bg-dim-blue-tertiary: var(--color-blue-200);
 
+  /* dim / brand */
   --bg-dim-brand-primary: var(--color-cornflower-50);
   --bg-dim-brand-secondary: var(--color-cornflower-100);
   --bg-dim-brand-tertiary: var(--color-cornflower-200);
 
+  /* dim / green */
   --bg-dim-green-primary: var(--color-green-50);
   --bg-dim-green-secondary: var(--color-green-100);
   --bg-dim-green-tertiary: var(--color-green-200);
 
+  /* dim / neutral */
   --bg-dim-neutral-primary: var(--color-grey-50);
   --bg-dim-neutral-secondary: var(--color-grey-100);
   --bg-dim-neutral-tertiary: var(--color-grey-200);
 
+  /* dim / orange */
   --bg-dim-orange-primary: var(--color-orange-50);
   --bg-dim-orange-secondary: var(--color-orange-100);
   --bg-dim-orange-tertiary: var(--color-orange-200);
 
+  /* dim / red */
   --bg-dim-red-primary: var(--color-red-50);
   --bg-dim-red-secondary: var(--color-red-100);
   --bg-dim-red-tertiary: var(--color-red-200);
 
+  /* dim / white */
   --bg-dim-white-primary: var(--color-white-alpha-10);
   --bg-dim-white-secondary: var(--color-white-alpha-20);
   --bg-dim-white-tertiary: var(--color-white-alpha-30);
 
+  /* dim / yellow */
   --bg-dim-yellow-primary: var(--color-yellow-50);
   --bg-dim-yellow-secondary: var(--color-yellow-100);
   --bg-dim-yellow-tertiary: var(--color-yellow-200);
 
+  /* status / disable */
   --bg-status-disable-primary: var(--support-disable-primary);
   --bg-status-disable-secondary: var(--support-disable-secondary);
 
+  /* status / error */
   --bg-status-error-primary: var(--support-error-primary);
   --bg-status-error-secondary: var(--support-error-secondary);
   --bg-status-error-tertiary: var(--support-error-tertiary);
 
+  /* status / info */
   --bg-status-info-primary: var(--support-info-primary);
   --bg-status-info-secondary: var(--support-info-secondary);
   --bg-status-info-tertiary: var(--support-info-tertiary);
 
+  /* status / inprogress */
   --bg-status-inprogress-primary: var(--support-inprogress-primary);
   --bg-status-inprogress-secondary: var(--support-inprogress-secondary);
   --bg-status-inprogress-tertiary: var(--support-inprogress-tertiary);
 
+  /* status / success */
   --bg-status-success-primary: var(--support-success-primary);
   --bg-status-success-secondary: var(--support-success-secondary);
   --bg-status-success-tertiary: var(--support-success-tertiary);
 
+  /* status / warning */
   --bg-status-warning-primary: var(--support-warning-primary);
   --bg-status-warning-secondary: var(--support-warning-secondary);
   --bg-status-warning-tertiary: var(--support-warning-tertiary);
+
   /* overlay */
   --bg-overlay-primary: var(--color-black-60);
   --bg-overlay-secondary: var(--color-black-40);
@@ -274,33 +293,41 @@
   --text-base-secondary: var(--color-grey-600);
   --text-base-tertiary: var(--color-grey-400);
 
+  /* base / inverse */
   --text-base-inverse-primary: var(--color-white-400);
   --text-base-inverse-secondary: var(--color-grey-300);
   --text-base-inverse-tertiary: var(--color-grey-500);
 
+  /* Brand */
   --text-brand-primary: var(--brand-primary);
   --text-brand-secondary: var(--brand-secondary);
   --text-brand-tertiary: var(--brand-tertiary);
 
+  /* status / disable */
   --text-status-disable-primary: var(--color-grey-100);
   --text-status-disable-secondary: var(--color-grey-200);
 
+  /* status / error */
   --text-status-error-primary: var(--support-error-primary);
   --text-status-error-secondary: var(--support-error-secondary);
   --text-status-error-tertiary: var(--support-error-tertiary);
 
+  /* status / inprogress */
   --text-status-inprogress-primary: var(--support-inprogress-primary);
   --text-status-inprogress-secondary: var(--support-inprogress-secondary);
   --text-status-inprogress-tertiary: var(--support-inprogress-tertiary);
 
+  /* status / link */
   --text-status-link-primary: var(--support-info-primary);
   --text-status-link-secondary: var(--support-info-secondary);
   --text-status-link-tertiary: var(--support-info-tertiary);
 
+  /* status / success */
   --text-status-success-primary: var(--support-success-primary);
   --text-status-success-secondary: var(--support-success-secondary);
   --text-status-success-tertiary: var(--support-success-tertiary);
 
+  /* status / warning */
   --text-status-warning-primary: var(--support-warning-primary);
   --text-status-warning-secondary: var(--support-warning-secondary);
   --text-status-warning-tertiary: var(--support-warning-tertiary);
@@ -310,33 +337,41 @@
   --icon-base-secondary: var(--color-grey-600);
   --icon-base-tertiary: var(--color-grey-400);
 
+  /* base / inverse */
   --icon-base-inverse-primary: var(--color-white-400);
   --icon-base-inverse-secondary: var(--color-grey-300);
   --icon-base-inverse-tertiary: var(--color-grey-500);
 
+  /* Brand */
   --icon-brand-primary: var(--brand-primary);
   --icon-brand-secondary: var(--brand-secondary);
   --icon-brand-tertiary: var(--brand-tertiary);
 
+  /* status / disable */
   --icon-status-disable-primary: var(--color-grey-300);
   --icon-status-disable-secondary: var(--color-grey-200);
 
+  /* status / error */
   --icon-status-error-primary: var(--support-error-primary);
   --icon-status-error-secondary: var(--support-error-secondary);
   --icon-status-error-tertiary: var(--support-error-tertiary);
 
+  /* status / info */
   --icon-status-info-primary: var(--support-info-primary);
   --icon-status-info-secondary: var(--support-info-secondary);
   --icon-status-info-tertiary: var(--support-info-tertiary);
 
+  /* status / inprogress */
   --icon-status-inprogress-primary: var(--support-inprogress-primary);
   --icon-status-inprogress-secondary: var(--support-inprogress-secondary);
   --icon-status-inprogress-tertiary: var(--support-inprogress-tertiary);
 
+  /* status / success */
   --icon-status-success-primary: var(--support-success-primary);
   --icon-status-success-secondary: var(--support-success-secondary);
   --icon-status-success-tertiary: var(--support-success-tertiary);
 
+  /* status / warning */
   --icon-status-warning-primary: var(--support-warning-primary);
   --icon-status-warning-secondary: var(--support-warning-secondary);
   --icon-status-warning-tertiary: var(--support-warning-tertiary);
@@ -346,69 +381,85 @@
   --border-base-secondary: var(--color-grey-200);
   --border-base-tertiary: var(--color-grey-400);
 
+  /* base / inverse */
   --border-base-inverse-primary: var(--color-grey-900);
   --border-base-inverse-secondary: var(--color-grey-800);
   --border-base-inverse-tertiary: var(--color-grey-700);
 
+  /* base / pure */
   --border-base-pure-black: var(--color-black-100);
   --border-base-pure-white: var(--color-white-500);
 
+  /* Brand */
   --border-brand-primary: var(--brand-primary);
   --border-brand-secondary: var(--brand-secondary);
   --border-brand-tertiary: var(--brand-tertiary);
 
+  /* brand / inverse */
   --border-brand-inverse-primary: var(--color-white-500);
   --border-brand-inverse-secondary: var(--color-grey-50);
   --border-brand-inverse-tertiary: var(--color-grey-100);
 
+  /* status / disable */
   --border-status-disable-primary: var(--support-disable-primary);
   --border-status-disable-secondary: var(--support-disable-secondary);
 
+  /* status / error */
   --border-status-error-primary: var(--support-error-primary);
   --border-status-error-secondary: var(--support-error-secondary);
   --border-status-error-tertiary: var(--support-error-tertiary);
 
+  /* status / info */
   --border-status-info-primary: var(--support-info-primary);
   --border-status-info-secondary: var(--support-info-secondary);
   --border-status-info-tertiary: var(--support-info-tertiary);
 
+  /* status / inprogress */
   --border-status-inprogress-primary: var(--support-inprogress-primary);
   --border-status-inprogress-secondary: var(--support-inprogress-secondary);
   --border-status-inprogress-tertiary: var(--support-inprogress-tertiary);
 
+  /* status / success */
   --border-status-success-primary: var(--support-success-primary);
   --border-status-success-secondary: var(--support-success-secondary);
   --border-status-success-tertiary: var(--support-success-tertiary);
 
+  /* status / warning */
   --border-status-warning-primary: var(--support-warning-primary);
   --border-status-warning-secondary: var(--support-warning-secondary);
   --border-status-warning-tertiary: var(--support-warning-tertiary);
 
   /* Support */
+  /* disable */
   --support-disable-primary: var(--color-grey-50);
   --support-disable-secondary: var(--color-grey-100);
 
+  /* error */
   --support-error-primary: var(--color-red-700);
   --support-error-secondary: var(--color-red-600);
   --support-error-tertiary: var(--color-red-500);
 
+  /* info */
   --support-info-primary: var(--color-blue-700);
   --support-info-secondary: var(--color-blue-600);
   --support-info-tertiary: var(--color-blue-500);
 
+  /* inprogress */
   --support-inprogress-primary: var(--color-orange-600);
   --support-inprogress-secondary: var(--color-orange-500);
   --support-inprogress-tertiary: var(--color-orange-400);
 
+  /* success */
   --support-success-primary: var(--color-green-800);
   --support-success-secondary: var(--color-green-700);
-
   --support-success-tertiary: var(--color-green-600);
+
+  /* warning */
   --support-warning-primary: var(--color-yellow-800);
   --support-warning-secondary: var(--color-yellow-700);
   --support-warning-tertiary: var(--color-yellow-600);
 
-  /* Dark */
+  /* -- Dark -- */
   /* Brand */
   --brand-dark-primary: var(--color-cornflower-500);
   --brand-dark-secondary: var(--color-cornflower-700);
@@ -432,77 +483,92 @@
   --bg-dark-base-tertiary: var(--color-grey-600);
   --bg-dark-base-quaternary: var(--color-grey-500);
 
+  /* base / inverse */
   --bg-dark-base-inverse-primary: var(--color-grey-700);
   --bg-dark-base-inverse-secondary: var(--color-grey-600);
   --bg-dark-base-inverse-tertiary: var(--color-grey-500);
 
+  /* base / pure */
   --bg-dark-base-pure-black: var(--color-white-500);
   --bg-dark-base-pure-white: var(--color-black-100);
 
-  /* brand */
+  /* Brand */
   --bg-dark-brand-primary: var(--brand-dark-primary);
   --bg-dark-brand-secondary: var(--brand-dark-secondary);
   --bg-dark-brand-tertiary: var(--brand-dark-tertiary);
 
+  /* brand / inverse */
   --bg-dark-brand-inverse-primary: var(--color-white-500);
   --bg-dark-brand-inverse-secondary: var(--color-grey-50);
   --bg-dark-brand-inverse-tertiary: var(--color-grey-100);
 
-  /* dim */
+  /* dim / blue */
   --bg-dark-dim-blue-primary: var(--color-blue-dark-50);
   --bg-dark-dim-blue-secondary: var(--color-blue-dark-40);
   --bg-dark-dim-blue-tertiary: var(--color-blue-dark-30);
 
+  /* dim / brand */
   --bg-dark-dim-brand-primary: var(--color-cornflower-alpha-10);
   --bg-dark-dim-brand-secondary: var(--color-cornflower-alpha-20);
   --bg-dark-dim-brand-tertiary: var(--color-cornflower-alpha-30);
 
+  /* dim / green */
   --bg-dark-dim-green-primary: var(--color-green-dark-40);
   --bg-dark-dim-green-secondary: var(--color-green-dark-30);
   --bg-dark-dim-green-tertiary: var(--color-green-dark-20);
 
+  /* dim / neutral */
   --bg-dark-dim-neutral-primary: var(--color-grey-700);
   --bg-dark-dim-neutral-secondary: var(--color-grey-600);
   --bg-dark-dim-neutral-tertiary: var(--color-grey-500);
 
+  /* dim / orange */
   --bg-dark-dim-orange-primary: var(--color-orange-dark-40);
   --bg-dark-dim-orange-secondary: var(--color-orange-dark-30);
   --bg-dark-dim-orange-tertiary: var(--color-orange-dark-20);
 
+  /* dim / red */
   --bg-dark-dim-red-primary: var(--color-red-dark-50);
   --bg-dark-dim-red-secondary: var(--color-red-dark-40);
   --bg-dark-dim-red-tertiary: var(--color-red-dark-30);
 
+  /* dim / white */
   --bg-dark-dim-white-primary: var(--color-white-alpha-20);
   --bg-dark-dim-white-secondary: var(--color-white-alpha-30);
   --bg-dark-dim-white-tertiary: var(--color-white-alpha-40);
 
+  /* dim / yellow */
   --bg-dark-dim-yellow-primary: var(--color-yellow-dark-40);
   --bg-dark-dim-yellow-secondary: var(--color-yellow-dark-30);
   --bg-dark-dim-yellow-tertiary: var(--color-yellow-dark-20);
 
-  /* status */
+  /* status / disable */
   --bg-dark-status-disable-primary: var(--support-dark-disable-primary);
   --bg-dark-status-disable-secondary: var(--support-dark-disable-secondary);
 
+  /* status / error */
   --bg-dark-status-error-primary: var(--support-dark-error-primary);
   --bg-dark-status-error-secondary: var(--support-dark-error-secondary);
   --bg-dark-status-error-tertiary: var(--support-dark-error-tertiary);
 
+  /* status / info */
   --bg-dark-status-info-primary: var(--support-dark-info-primary);
   --bg-dark-status-info-secondary: var(--support-dark-info-secondary);
   --bg-dark-status-info-tertiary: var(--support-dark-info-tertiary);
 
+  /* status / inprogress */
   --bg-dark-status-inprogress-primary: var(--support-dark-inprogress-primary);
   --bg-dark-status-inprogress-secondary: var(
     --support-dark-inprogress-secondary
   );
   --bg-dark-status-inprogress-tertiary: var(--support-dark-inprogress-tertiary);
 
+  /* status / success */
   --bg-dark-status-success-primary: var(--support-dark-success-primary);
   --bg-dark-status-success-secondary: var(--support-dark-success-secondary);
   --bg-dark-status-success-tertiary: var(--support-dark-success-tertiary);
 
+  /* status / warning */
   --bg-dark-status-warning-primary: var(--support-dark-warning-primary);
   --bg-dark-status-warning-secondary: var(--support-dark-warning-secondary);
   --bg-dark-status-warning-tertiary: var(--support-dark-warning-tertiary);
@@ -517,21 +583,26 @@
   --text-dark-base-secondary: var(--color-grey-300);
   --text-dark-base-tertiary: var(--color-grey-400);
 
+  /* base / inverse */
   --text-dark-base-inverse-primary: var(--color-white-400);
   --text-dark-base-inverse-secondary: var(--color-grey-200);
   --text-dark-base-inverse-tertiary: var(--color-grey-300);
 
+  /* Brand */
   --text-dark-brand-primary: var(--brand-dark-primary);
   --text-dark-brand-secondary: var(--brand-dark-secondary);
   --text-dark-brand-tertiary: var(--brand-dark-tertiary);
 
+  /* status / disable */
   --text-dark-status-disable-primary: var(--color-grey-700);
   --text-dark-status-disable-secondary: var(--color-grey-500);
 
+  /* status / error */
   --text-dark-status-error-primary: var(--support-dark-error-primary);
   --text-dark-status-error-secondary: var(--support-dark-error-secondary);
   --text-dark-status-error-tertiary: var(--support-dark-error-tertiary);
 
+  /* status / inprogress */
   --text-dark-status-inprogress-primary: var(--support-dark-inprogress-primary);
   --text-dark-status-inprogress-secondary: var(
     --support-dark-inprogress-secondary
@@ -540,14 +611,17 @@
     --support-dark-inprogress-tertiary
   );
 
+  /* status / link */
   --text-dark-status-link-primary: var(--support-dark-info-primary);
   --text-dark-status-link-secondary: var(--support-dark-info-secondary);
   --text-dark-status-link-tertiary: var(--support-dark-info-tertiary);
 
+  /* status / success */
   --text-dark-status-success-primary: var(--support-dark-success-primary);
   --text-dark-status-success-secondary: var(--support-dark-success-secondary);
   --text-dark-status-success-tertiary: var(--support-dark-success-tertiary);
 
+  /* status / warning */
   --text-dark-status-warning-primary: var(--support-dark-warning-primary);
   --text-dark-status-warning-secondary: var(--support-dark-warning-secondary);
   --text-dark-status-warning-tertiary: var(--support-dark-warning-tertiary);
@@ -557,25 +631,31 @@
   --icon-dark-base-secondary: var(--color-grey-400);
   --icon-dark-base-tertiary: var(--color-grey-500);
 
+  /* base / inverse */
   --icon-dark-base-inverse-primary: var(--color-white-400);
   --icon-dark-base-inverse-secondary: var(--color-grey-200);
   --icon-dark-base-inverse-tertiary: var(--color-grey-300);
 
+  /* Brand */
   --icon-dark-brand-primary: var(--brand-dark-primary);
   --icon-dark-brand-secondary: var(--brand-dark-secondary);
   --icon-dark-brand-tertiary: var(--brand-dark-tertiary);
 
+  /* status / disable */
   --icon-dark-status-disable-primary: var(--color-grey-600);
   --icon-dark-status-disable-secondary: var(--color-grey-400);
 
+  /* status / error */
   --icon-dark-status-error-primary: var(--support-dark-error-primary);
   --icon-dark-status-error-secondary: var(--support-dark-error-secondary);
   --icon-dark-status-error-tertiary: var(--support-dark-error-tertiary);
 
+  /* status / info */
   --icon-dark-status-info-primary: var(--support-dark-info-primary);
   --icon-dark-status-info-secondary: var(--support-dark-info-secondary);
   --icon-dark-status-info-tertiary: var(--support-dark-info-tertiary);
 
+  /* status / inprogress */
   --icon-dark-status-inprogress-primary: var(--support-dark-inprogress-primary);
   --icon-dark-status-inprogress-secondary: var(
     --support-dark-inprogress-secondary
@@ -584,10 +664,12 @@
     --support-dark-inprogress-tertiary
   );
 
+  /* status / success */
   --icon-dark-status-success-primary: var(--support-dark-success-primary);
   --icon-dark-status-success-secondary: var(--support-dark-success-secondary);
   --icon-dark-status-success-tertiary: var(--support-dark-success-tertiary);
 
+  /* status / warning */
   --icon-dark-status-warning-primary: var(--support-dark-warning-primary);
   --icon-dark-status-warning-secondary: var(--support-dark-warning-secondary);
   --icon-dark-status-warning-tertiary: var(--support-dark-warning-tertiary);
@@ -597,32 +679,40 @@
   --border-dark-base-secondary: var(--color-grey-500);
   --border-dark-base-tertiary: var(--color-grey-400);
 
+  /* base / inverse */
   --border-dark-base-inverse-primary: var(--color-grey-100);
   --border-dark-base-inverse-secondary: var(--color-grey-200);
   --border-dark-base-inverse-tertiary: var(--color-grey-300);
 
+  /* base / pure */
   --border-dark-base-pure-black: var(--color-white-400);
   --border-dark-base-pure-white: var(--color-grey-900);
 
+  /* Brand */
   --border-dark-brand-primary: var(--brand-dark-primary);
   --border-dark-brand-secondary: var(--brand-dark-secondary);
   --border-dark-brand-tertiary: var(--brand-dark-tertiary);
 
+  /* brand / inverse */
   --border-dark-brand-inverse-primary: var(--color-white-500);
   --border-dark-brand-inverse-secondary: var(--color-grey-50);
   --border-dark-brand-inverse-tertiary: var(--color-grey-100);
 
+  /* status / disable */
   --border-dark-status-disable-primary: var(--support-dark-disable-primary);
   --border-dark-status-disable-secondary: var(--support-dark-disable-secondary);
 
+  /* status / error */
   --border-dark-status-error-primary: var(--support-dark-error-primary);
   --border-dark-status-error-secondary: var(--support-dark-error-secondary);
   --border-dark-status-error-tertiary: var(--support-dark-error-tertiary);
 
+  /* status / info */
   --border-dark-status-info-primary: var(--support-dark-info-primary);
   --border-dark-status-info-secondary: var(--support-dark-info-secondary);
   --border-dark-status-info-tertiary: var(--support-dark-info-tertiary);
 
+  /* status / inprogress */
   --border-dark-status-inprogress-primary: var(
     --support-dark-inprogress-primary
   );
@@ -633,116 +723,46 @@
     --support-dark-inprogress-tertiary
   );
 
+  /* status / success */
   --border-dark-status-success-primary: var(--support-dark-success-primary);
   --border-dark-status-success-secondary: var(--support-dark-success-secondary);
   --border-dark-status-success-tertiary: var(--support-dark-success-tertiary);
 
+  /* status / warning */
   --border-dark-status-warning-primary: var(--support-dark-warning-primary);
   --border-dark-status-warning-secondary: var(--support-dark-warning-secondary);
   --border-dark-status-warning-tertiary: var(--support-dark-warning-tertiary);
 
   /* Support */
+  /* disable */
   --support-dark-disable-primary: var(--color-grey-700);
   --support-dark-disable-secondary: var(--color-grey-900);
 
+  /* error */
   --support-dark-error-primary: var(--color-red-500);
   --support-dark-error-secondary: var(--color-red-400);
   --support-dark-error-tertiary: var(--color-red-300);
 
+  /* info */
   --support-dark-info-primary: var(--color-blue-500);
   --support-dark-info-secondary: var(--color-blue-400);
   --support-dark-info-tertiary: var(--color-blue-300);
 
+  /* inprogress */
   --support-dark-inprogress-primary: var(--color-orange-400);
   --support-dark-inprogress-secondary: var(--color-orange-300);
   --support-dark-inprogress-tertiary: var(--color-orange-200);
 
+  /* success */
   --support-dark-success-primary: var(--color-green-600);
   --support-dark-success-secondary: var(--color-green-500);
   --support-dark-success-tertiary: var(--color-green-400);
 
+  /* warning */
   --support-dark-warning-primary: var(--color-yellow-600);
   --support-dark-warning-secondary: var(--color-yellow-500);
   --support-dark-warning-tertiary: var(--color-yellow-400);
-
-  /* Alias: effect */
-  /* Light */
-  /* Shadow */
-  /* base */
-  --effect-shadow-base-elevation-1-position-x: 0rem;
-  --effect-shadow-base-elevation-1-spread: 0rem;
-  --effect-shadow-base-elevation-1-position-y: 0.0625rem;
-  --effect-shadow-base-elevation-1-blur: 0.5rem;
-  --effect-shadow-base-elevation-1-color: #0000001f;
-
-  --effect-shadow-base-elevation-2-position-x: 0rem;
-  --effect-shadow-base-elevation-2-spread: 0rem;
-  --effect-shadow-base-elevation-2-position-y: 0.1875rem;
-  --effect-shadow-base-elevation-2-blur: 0.75rem;
-  --effect-shadow-base-elevation-2-color: var(--color-black-10);
-
-  --effect-shadow-base-elevation-3-position-x: 0rem;
-  --effect-shadow-base-elevation-3-spread: 0rem;
-  --effect-shadow-base-elevation-3-position-y: 0.5rem;
-  --effect-shadow-base-elevation-3-blur: 2rem;
-  --effect-shadow-base-elevation-3-color: #0000001f;
-
-  /* component */
-  --effect-shadow-component-app-navbar-position-x: 0rem;
-  --effect-shadow-component-app-navbar-spread: 0rem;
-  --effect-shadow-component-app-navbar-position-y: 0.1875rem;
-  --effect-shadow-component-app-navbar-blur: 0.75rem;
-  --effect-shadow-component-app-navbar-color: var(--color-black-20);
-
-  --effect-shadow-component-slider-handle-position-x: 0rem;
-  --effect-shadow-component-slider-handle-spread: 0rem;
-  --effect-shadow-component-slider-handle-position-y: 0.0625rem;
-  --effect-shadow-component-slider-handle-blur: 0.25rem;
-  --effect-shadow-component-slider-handle-color: #0000003d;
-
-  --effect-shadow-component-tooltip-position-x: 0rem;
-  --effect-shadow-component-tooltip-spread: 0rem;
-  --effect-shadow-component-tooltip-position-y: 0.0625rem;
-  --effect-shadow-component-tooltip-blur: 0.5rem;
-  --effect-shadow-component-tooltip-color: var(--color-black-20);
-
-  /* Dark */
-  /* Shadow */
-  /* base */
-  --effect-shadow-base-elevation-1-position-x: 0rem;
-  --effect-shadow-base-elevation-1-spread: 0rem;
-  --effect-shadow-base-elevation-1-position-y: 0.0625rem;
-  --effect-shadow-base-elevation-1-blur: 0.5rem;
-  --effect-shadow-base-elevation-1-color: var(--color-black-100);
-
-  --effect-shadow-base-elevation-2-position-x: 0rem;
-  --effect-shadow-base-elevation-2-spread: 0rem;
-  --effect-shadow-base-elevation-2-position-y: 0.25rem;
-  --effect-shadow-base-elevation-2-blur: 1.5rem;
-  --effect-shadow-base-elevation-2-color: var(--color-black-90);
-
-  --effect-shadow-base-elevation-3-position-x: 0rem;
-  --effect-shadow-base-elevation-3-spread: 0rem;
-  --effect-shadow-base-elevation-3-position-y: 0.25rem;
-  --effect-shadow-base-elevation-3-blur: 2.5rem;
-  --effect-shadow-base-elevation-3-color: var(--color-black-80);
-
-  /* component */
-  --effect-shadow-component-app-navbar-position-x: 0rem;
-  --effect-shadow-component-app-navbar-spread: 0rem;
-  --effect-shadow-component-app-navbar-position-y: 0.1875rem;
-  --effect-shadow-component-app-navbar-blur: 0.75rem;
-  --effect-shadow-component-app-navbar-color: var(--color-black-80);
-
-  --effect-shadow-component-slider-handle-position-x: 0rem;
-  --effect-shadow-component-slider-handle-spread: 0rem;
-  --effect-shadow-component-slider-handle-position-y: 0.0625rem;
-  --effect-shadow-component-slider-handle-blur: 0.25rem;
-  --effect-shadow-component-slider-handle-color: #0000003d;
-
-  --effect-shadow-component-tooltip-position-x: 0rem;
-  --effect-shadow-component-tooltip-spread: 0rem;
-  --effect-shadow-component-tooltip-position-y: 0.0625rem;
-  --effect-shadow-component-tooltip-blur: 0.5rem;
-  --effect-shadow-component-tooltip-color: var(--color-black-80);
 }
+
+
+

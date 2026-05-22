@@ -4,26 +4,45 @@ This folder contains the design variables for The Q-library. The variables are e
 
 ## Figma Community
 
-- Official 2.0: [the q library 2 0](https://www.figma.com/community/file/1420604836785710311/the-q-library-2-0)
-- Lite 2.0: [the q library 2 0 lite](https://www.figma.com/community/file/1501123476616291541/the-q-library-2-0-lite)
+- 2.0 Official: [Get now](https://www.figma.com/community/file/1420604836785710311/the-q-library-2-0)
+- 2.0 Lite: [Get now](https://www.figma.com/community/file/1501123476616291541/the-q-library-2-0-lite)
 
 ## Files
 
-- `color-effect.css`: CSS custom properties for color aliases, light/dark theme tokens, support/status colors, and effect tokens.
-- `color-effect.scss`: SCSS variable version of `color-effect.css`.
-- `number.css`: CSS custom properties for number, radius, and spacing tokens.
-- `number.scss`: SCSS variable version of `number.css`.
-- `typography.css`: CSS custom properties for font family, font size, font weight, line height, and letter spacing tokens.
-- `typography.scss`: SCSS variable version of `typography.css`.
+```txt
+The Q-library variables
+|-- css
+|   |-- app.css
+|   |-- color.css
+|   |-- effect.css
+|   |-- number.css
+|   `-- typography.css
+|-- scss
+|   |-- app.scss
+|   |-- color.scss
+|   |-- effect.scss
+|   |-- number.scss
+|   `-- typography.scss
+`-- README.md
+```
+
+- `css/app.css`: Entry file that imports all CSS variable files in the correct order.
+- `scss/app.scss`: Entry file that imports all SCSS variable files in the correct order.
+- `css/color.css`: CSS custom properties for color aliases, light/dark theme tokens, and support/status colors.
+- `scss/color.scss`: SCSS variable version of `color.css`.
+- `css/effect.css`: CSS custom properties for shadow/effect tokens. This file depends on color tokens.
+- `scss/effect.scss`: SCSS variable version of `effect.css`. This file depends on color tokens.
+- `css/number.css`: CSS custom properties for number, radius, and spacing tokens.
+- `scss/number.scss`: SCSS variable version of `number.css`.
+- `css/typography.css`: CSS custom properties for font family, font size, font weight, line height, and letter spacing tokens.
+- `scss/typography.scss`: SCSS variable version of `typography.css`.
 
 ## CSS Usage
 
 Use the `.css` files when you want native CSS variables:
 
 ```css
-@import "./number.css";
-@import "./color-effect.css";
-@import "./typography.css";
+@import "./css/app.css";
 
 .button {
   color: var(--text-base-primary);
@@ -38,17 +57,13 @@ Use the `.css` files when you want native CSS variables:
 Use the `.scss` files when working inside a Sass/SCSS project:
 
 ```scss
-@use "./number";
-@use "./color-effect";
-@use "./typography";
+@use "./scss/app" as *;
 ```
 
 If your build setup uses older Sass imports, you can also import them directly:
 
 ```scss
-@import "./number";
-@import "./color-effect";
-@import "./typography";
+@import "./scss/app";
 ```
 
 Then use the variables:
@@ -66,5 +81,7 @@ Then use the variables:
 
 - CSS files use `--token-name` and `var(--token-name)`.
 - SCSS files use `$token-name` and direct variable references.
+- `effect` depends on `color`, so the entry files import `color` before `effect`.
+- `typography` depends on `number`, so the entry files import `number` before `typography`.
 - Dark theme aliases use the `-dark-` naming pattern, such as `$bg-dark-base-primary`, `$text-dark-base-primary`, and `$support-dark-error-primary`.
-- Number tokens are converted to `rem` values for scalable spacing and sizing.
+- Number tokens use `rem` values for scalable spacing and sizing.

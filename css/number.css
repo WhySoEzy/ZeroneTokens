@@ -1,6 +1,6 @@
-/* Alias: number */
+﻿/* === Alias: number === */
 :root {
-  /* Number */
+  /* === Global === */
   --number-null: 0rem;
   --number-1px: 0.0625rem;
   --number-2px: 0.125rem;
@@ -36,7 +36,8 @@
   --number-128px: 8rem;
   --number-999px: 62.4375rem;
 
-  /* Base */
+  /* === Alias === */
+  /* -- Base -- */
   --radius-base-sharp: var(--number-null);
   --radius-base-rounded-4: var(--number-4px);
   --radius-base-rounded-8: var(--number-8px);
@@ -45,13 +46,15 @@
   --radius-base-rounded-20: var(--number-20px);
   --radius-base-rounded-24: var(--number-24px);
   --radius-base-pill: var(--number-999px);
-  /* Component */
+
+  /* -- Component -- */
   --radius-component-button: var(--radius-base-rounded-8);
   --radius-component-input: var(--radius-base-rounded-8);
   --radius-component-tag-default: var(--radius-base-rounded-8);
   --radius-component-modal: var(--radius-base-rounded-20);
   --radius-component-tag-pill: var(--radius-base-pill);
-  /* Space */
+
+  /* -- Space -- */
   /* gap */
   --space-gap-2px: var(--number-2px);
   --space-gap-4px: var(--number-4px);
@@ -65,6 +68,7 @@
   --space-gap-48px: var(--number-48px);
   --space-gap-56px: var(--number-56px);
   --space-gap-64px: var(--number-64px);
+
   /* inset */
   --space-inset-2px: var(--number-2px);
   --space-inset-4px: var(--number-4px);
@@ -79,3 +83,4 @@
   --space-inset-56px: var(--number-56px);
   --space-inset-64px: var(--number-64px);
 }
+
