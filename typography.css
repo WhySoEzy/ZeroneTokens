@@ -1,0 +1,81 @@
+/* Typography */
+:root {
+  /* Font family */
+  --font-family: "Inter";
+  --font-type-body: var(--font-family);
+  --font-type-display: var(--font-family);
+  --font-type-heading: var(--font-family);
+
+  /* Size */
+  /* web */
+  --font-size-web-body-sm: var(--number-12px);
+  --font-size-web-body-md: var(--number-14px);
+  --font-size-web-body-lg: var(--number-16px);
+  --font-size-web-body-xl: var(--number-18px);
+  --font-size-web-component-button-sm: var(--number-14px);
+  --font-size-web-component-button-base: var(--number-16px);
+  --font-size-web-component-input-sm: var(--number-14px);
+  --font-size-web-component-input-base: var(--number-16px);
+  --font-size-web-display-d2: var(--number-64px);
+  --font-size-web-display-d1: var(--number-80px);
+  --font-size-web-heading-h5: var(--number-20px);
+  --font-size-web-heading-h4: var(--number-24px);
+  --font-size-web-heading-h3: var(--number-32px);
+  --font-size-web-heading-h2: var(--number-40px);
+  --font-size-web-heading-h1: var(--number-48px);
+  /* app */
+  --font-size-app-body-xs: var(--number-10px);
+  --font-size-app-body-sm: var(--number-12px);
+  --font-size-app-body-md: var(--number-14px);
+  --font-size-app-body-lg: var(--number-16px);
+  --font-size-app-body-xl: var(--number-18px);
+  --font-size-app-component-button-sm: var(--number-12px);
+  --font-size-app-component-button-base: var(--number-14px);
+  --font-size-app-component-input-sm: var(--number-12px);
+  --font-size-app-component-input-base: var(--number-14px);
+  --font-size-app-heading-h4: var(--number-20px);
+  --font-size-app-heading-h3: var(--number-24px);
+  --font-size-app-heading-h2: var(--number-28px);
+  --font-size-app-heading-h1: var(--number-32px);
+
+  /* Font weight */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line height */
+  /* web */
+  --font-line-height-web-body-sm: var(--number-16px);
+  --font-line-height-web-body-md: var(--number-20px);
+  --font-line-height-web-body-lg: var(--number-24px);
+  --font-line-height-web-body-xl: var(--number-26px);
+  --font-line-height-web-h5: var(--number-28px);
+  --font-line-height-web-h4: var(--number-32px);
+  --font-line-height-web-h3: var(--number-40px);
+  --font-line-height-web-h2: var(--number-48px);
+  --font-line-height-web-h1: var(--number-56px);
+  --font-line-height-web-d2: var(--number-72px);
+  --font-line-height-web-d1: var(--number-88px);
+  --font-line-height-web-component-button: var(--number-24px);
+  --font-line-height-web-component-input: var(--number-24px);
+  /* app */
+  --font-line-height-app-body-xs: var(--number-14px);
+  --font-line-height-app-body-sm: var(--number-16px);
+  --font-line-height-app-body-md: var(--number-20px);
+  --font-line-height-app-body-lg: var(--number-24px);
+  --font-line-height-app-body-xl: var(--number-26px);
+  --font-line-height-app-h4: var(--number-28px);
+  --font-line-height-app-h3: var(--number-32px);
+  --font-line-height-app-h2: var(--number-36px);
+  --font-line-height-app-h1: var(--number-40px);
+  --font-line-height-app-component-button: var(--number-24px);
+  --font-line-height-app-component-input: var(--number-24px);
+
+  /* Letter spacing */
+  --font-letter-spacing-app-body: 0rem;
+  --font-letter-spacing-app-heading: 0rem;
+  --font-letter-spacing-web-body: 0rem;
+  --font-letter-spacing-web-display: 0rem;
+  --font-letter-spacing-web-heading: 0rem;
+}

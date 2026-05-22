@@ -1,0 +1,79 @@
+﻿/* Alias: number */
+  /* Number */
+  $number-null: 0rem;
+  $number-1px: 0.0625rem;
+  $number-2px: 0.125rem;
+  $number-4px: 0.25rem;
+  $number-8px: 0.5rem;
+  $number-10px: 0.625rem;
+  $number-11px: 0.6875rem;
+  $number-12px: 0.75rem;
+  $number-13px: 0.8125rem;
+  $number-14px: 0.875rem;
+  $number-15px: 0.9375rem;
+  $number-16px: 1rem;
+  $number-17px: 1.0625rem;
+  $number-18px: 1.125rem;
+  $number-19px: 1.1875rem;
+  $number-20px: 1.25rem;
+  $number-24px: 1.5rem;
+  $number-26px: 1.625rem;
+  $number-28px: 1.75rem;
+  $number-32px: 2rem;
+  $number-36px: 2.25rem;
+  $number-40px: 2.5rem;
+  $number-44px: 2.75rem;
+  $number-48px: 3rem;
+  $number-52px: 3.25rem;
+  $number-56px: 3.5rem;
+  $number-64px: 4rem;
+  $number-72px: 4.5rem;
+  $number-80px: 5rem;
+  $number-88px: 5.5rem;
+  $number-92px: 5.75rem;
+  $number-96px: 6rem;
+  $number-128px: 8rem;
+  $number-999px: 62.4375rem;
+
+  /* Base */
+  $radius-base-sharp: $number-null;
+  $radius-base-rounded-4: $number-4px;
+  $radius-base-rounded-8: $number-8px;
+  $radius-base-rounded-12: $number-12px;
+  $radius-base-rounded-16: $number-16px;
+  $radius-base-rounded-20: $number-20px;
+  $radius-base-rounded-24: $number-24px;
+  $radius-base-pill: $number-999px;
+  /* Component */
+  $radius-component-button: $radius-base-rounded-8;
+  $radius-component-input: $radius-base-rounded-8;
+  $radius-component-tag-default: $radius-base-rounded-8;
+  $radius-component-modal: $radius-base-rounded-20;
+  $radius-component-tag-pill: $radius-base-pill;
+  /* Space */
+  /* gap */
+  $space-gap-2px: $number-2px;
+  $space-gap-4px: $number-4px;
+  $space-gap-8px: $number-8px;
+  $space-gap-12px: $number-12px;
+  $space-gap-16px: $number-16px;
+  $space-gap-20px: $number-20px;
+  $space-gap-24px: $number-24px;
+  $space-gap-32px: $number-32px;
+  $space-gap-40px: $number-40px;
+  $space-gap-48px: $number-48px;
+  $space-gap-56px: $number-56px;
+  $space-gap-64px: $number-64px;
+  /* inset */
+  $space-inset-2px: $number-2px;
+  $space-inset-4px: $number-4px;
+  $space-inset-8px: $number-8px;
+  $space-inset-12px: $number-12px;
+  $space-inset-16px: $number-16px;
+  $space-inset-20px: $number-20px;
+  $space-inset-24px: $number-24px;
+  $space-inset-32px: $number-32px;
+  $space-inset-40px: $number-40px;
+  $space-inset-48px: $number-48px;
+  $space-inset-56px: $number-56px;
+  $space-inset-64px: $number-64px;

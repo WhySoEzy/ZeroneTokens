@@ -1,0 +1,748 @@
+:root {
+  /* === Global === */
+  /* Brand */
+  --color-cornflower-50: #f0f2fa;
+  --color-cornflower-100: #e2e5f6;
+  --color-cornflower-200: #cad1f6;
+  --color-cornflower-300: #b1bdf6;
+  --color-cornflower-400: #98a8f6;
+  --color-cornflower-500: #8094f6;
+  --color-cornflower-600: #6880f6;
+  --color-cornflower-700: #5d72db;
+  --color-cornflower-800: #5265c2;
+  --color-cornflower-900: #4758a8;
+  --color-cornflower-950: #3c4a8f;
+  --color-cornflower-alpha-10: #6880f61a;
+  --color-cornflower-alpha-20: #6880f633;
+  --color-cornflower-alpha-30: #6880f64d;
+  --color-cornflower-alpha-40: #6880f666;
+  --color-cornflower-alpha-50: #6880f680;
+
+  /* Grey */
+  --color-grey-50: #f0f1f5;
+  --color-grey-100: #dadbe0;
+  --color-grey-200: #bfc1c7;
+  --color-grey-300: #a3a5ad;
+  --color-grey-400: #888994;
+  --color-grey-500: #70717a;
+  --color-grey-600: #4e4f57;
+  --color-grey-700: #3f4047;
+  --color-grey-800: #202124;
+  --color-grey-900: #121214;
+  --color-grey-950: #09090a;
+
+  /* White */
+  --color-white-100: #f5f5f5;
+  --color-white-200: #f7f7f7;
+  --color-white-300: #fafafa;
+  --color-white-400: #fcfcfc;
+  --color-white-500: #ffffff;
+  --color-white-alpha-10: #ffffff1a;
+  --color-white-alpha-20: #ffffff33;
+  --color-white-alpha-30: #ffffff4d;
+  --color-white-alpha-40: #ffffff66;
+  --color-white-alpha-50: #ffffff80;
+  --color-white-alpha-60: #ffffff99;
+  --color-white-alpha-70: #ffffffb2;
+  --color-white-alpha-80: #ffffffcc;
+  --color-white-alpha-90: #ffffffe5;
+
+  /* Black */
+  --color-black-10: #0000001a;
+  --color-black-100: #000000;
+  --color-black-20: #00000033;
+  --color-black-30: #0000004d;
+  --color-black-40: #00000066;
+  --color-black-5: #0000000d;
+  --color-black-50: #00000080;
+  --color-black-60: #00000099;
+  --color-black-70: #000000b2;
+  --color-black-80: #000000cc;
+  --color-black-90: #000000e5;
+
+  /* Blue */
+  --color-blue-100: #d1ddff;
+  --color-blue-200: #b8c9ff;
+  --color-blue-300: #9eb6ff;
+  --color-blue-400: #85a3ff;
+  --color-blue-50: #ebf0ff;
+  --color-blue-500: #6b90ff;
+  --color-blue-600: #527dff;
+  --color-blue-700: #386aff;
+  --color-blue-800: #1f5fff;
+  --color-blue-900: #054dff;
+  --color-blue-alpha-10: #527dff1a;
+  --color-blue-alpha-20: #527dff33;
+  --color-blue-alpha-30: #527dff4d;
+  --color-blue-alpha-40: #527dff66;
+  --color-blue-alpha-50: #527dff80;
+  --color-blue-dark-10: #05070d;
+  --color-blue-dark-20: #0f1626;
+  --color-blue-dark-30: #1a2540;
+  --color-blue-dark-40: #1f2c4d;
+  --color-blue-dark-50: #243359;
+
+  /* Green */
+  --color-green-100: #bbf0d4;
+  --color-green-200: #91e5bb;
+  --color-green-300: #5ed89b;
+  --color-green-400: #3ecd85;
+  --color-green-50: #dcf5e8;
+  --color-green-500: #25c173;
+  --color-green-600: #0eb260;
+  --color-green-700: #00a351;
+  --color-green-800: #008f47;
+  --color-green-900: #008040;
+  --color-green-alpha-10: #008f471a;
+  --color-green-alpha-20: #008f4733;
+  --color-green-alpha-30: #008f474d;
+  --color-green-alpha-40: #008f4766;
+  --color-green-alpha-50: #008f4780;
+  --color-green-dark-10: #050d09;
+  --color-green-dark-20: #0f261b;
+  --color-green-dark-30: #153324;
+  --color-green-dark-40: #1a402d;
+  --color-green-dark-50: #1f4d36;
+
+  /* Orange */
+  --color-orange-100: #fad9be;
+  --color-orange-200: #f5c7a2;
+  --color-orange-300: #f0b586;
+  --color-orange-400: #eba46c;
+  --color-orange-50: #ffebdb;
+  --color-orange-500: #e59453;
+  --color-orange-600: #e0833a;
+  --color-orange-700: #db7423;
+  --color-orange-800: #d6650d;
+  --color-orange-900: #cc5900;
+  --color-orange-alpha-10: #e0833a1a;
+  --color-orange-alpha-20: #e0833a33;
+  --color-orange-alpha-30: #e0833a4d;
+  --color-orange-alpha-40: #e0833a66;
+  --color-orange-alpha-50: #e0833a80;
+  --color-orange-dark-10: #0d0805;
+  --color-orange-dark-20: #26190f;
+  --color-orange-dark-30: #402a1a;
+  --color-orange-dark-40: #4d331f;
+  --color-orange-dark-50: #593b24;
+
+  /* Red */
+  --color-red-100: #ffc7c7;
+  --color-red-200: #ffadad;
+  --color-red-300: #ff9494;
+  --color-red-400: #ff7a7a;
+  --color-red-50: #ffe5e5;
+  --color-red-500: #ff6161;
+  --color-red-600: #ff4747;
+  --color-red-700: #e54040;
+  --color-red-800: #d13a3a;
+  --color-red-900: #bf3636;
+  --color-red-alpha-10: #e540401a;
+  --color-red-alpha-20: #e5404033;
+  --color-red-alpha-30: #e540404d;
+  --color-red-alpha-40: #e5404066;
+  --color-red-alpha-50: #e5404080;
+  --color-red-dark-10: #0d0505;
+  --color-red-dark-20: #260f0f;
+  --color-red-dark-30: #331414;
+  --color-red-dark-40: #401a1a;
+  --color-red-dark-50: #4d1f1f;
+
+  /* Yellow */
+  --color-yellow-100: #faecbe;
+  --color-yellow-200: #f5e2a2;
+  --color-yellow-300: #f0d886;
+  --color-yellow-400: #ebce6c;
+  --color-yellow-50: #faf2d7;
+  --color-yellow-500: #e5c453;
+  --color-yellow-600: #e0bb3a;
+  --color-yellow-700: #d6ae22;
+  --color-yellow-800: #d1a200;
+  --color-yellow-900: #b89007;
+  --color-yellow-alpha-10: #d1a2001a;
+  --color-yellow-alpha-20: #d1a20033;
+  --color-yellow-alpha-30: #d1a2004d;
+  --color-yellow-alpha-40: #d1a20066;
+  --color-yellow-alpha-50: #d1a20080;
+  --color-yellow-dark-10: #0d0a00;
+  --color-yellow-dark-20: #26210f;
+  --color-yellow-dark-30: #332c14;
+  --color-yellow-dark-40: #40371a;
+  --color-yellow-dark-50: #4d421f;
+
+  /* === Alias: color === */
+  /* Light */
+  /* Brand */
+  --brand-primary: var(--color-cornflower-600);
+  --brand-secondary: var(--color-cornflower-800);
+  --brand-tertiary: var(--color-cornflower-700);
+
+  /* Background */
+  /* body / app */
+  --bg-body-app-grey: var(--color-grey-50);
+  --bg-body-app-white: var(--color-white-500);
+  /* body / dashboard */
+  --bg-body-dashboard-grey: var(--color-grey-50);
+  --bg-body-dashboard-white: var(--color-white-500);
+  /* body / website */
+  --bg-body-website-grey: var(--color-grey-50);
+  --bg-body-website-white: var(--color-white-500);
+
+  /* element */
+  /* base */
+  --bg-base-primary: var(--color-white-500);
+  --bg-base-secondary: var(--color-grey-50);
+  --bg-base-tertiary: var(--color-grey-100);
+  --bg-base-quaternary: var(--color-grey-200);
+
+  --bg-base-inverse-primary: var(--color-grey-900);
+  --bg-base-inverse-secondary: var(--color-grey-800);
+  --bg-base-inverse-tertiary: var(--color-grey-700);
+
+  --bg-base-pure-black: var(--color-black-100);
+  --bg-base-pure-white: var(--color-white-500);
+
+  --bg-brand-primary: var(--brand-primary);
+  --bg-brand-secondary: var(--brand-secondary);
+  --bg-brand-tertiary: var(--brand-tertiary);
+
+  --bg-brand-inverse-primary: var(--color-white-500);
+  --bg-brand-inverse-secondary: var(--color-grey-50);
+  --bg-brand-inverse-tertiary: var(--color-grey-100);
+
+  --bg-dim-blue-primary: var(--color-blue-50);
+  --bg-dim-blue-secondary: var(--color-blue-100);
+  --bg-dim-blue-tertiary: var(--color-blue-200);
+
+  --bg-dim-brand-primary: var(--color-cornflower-50);
+  --bg-dim-brand-secondary: var(--color-cornflower-100);
+  --bg-dim-brand-tertiary: var(--color-cornflower-200);
+
+  --bg-dim-green-primary: var(--color-green-50);
+  --bg-dim-green-secondary: var(--color-green-100);
+  --bg-dim-green-tertiary: var(--color-green-200);
+
+  --bg-dim-neutral-primary: var(--color-grey-50);
+  --bg-dim-neutral-secondary: var(--color-grey-100);
+  --bg-dim-neutral-tertiary: var(--color-grey-200);
+
+  --bg-dim-orange-primary: var(--color-orange-50);
+  --bg-dim-orange-secondary: var(--color-orange-100);
+  --bg-dim-orange-tertiary: var(--color-orange-200);
+
+  --bg-dim-red-primary: var(--color-red-50);
+  --bg-dim-red-secondary: var(--color-red-100);
+  --bg-dim-red-tertiary: var(--color-red-200);
+
+  --bg-dim-white-primary: var(--color-white-alpha-10);
+  --bg-dim-white-secondary: var(--color-white-alpha-20);
+  --bg-dim-white-tertiary: var(--color-white-alpha-30);
+
+  --bg-dim-yellow-primary: var(--color-yellow-50);
+  --bg-dim-yellow-secondary: var(--color-yellow-100);
+  --bg-dim-yellow-tertiary: var(--color-yellow-200);
+
+  --bg-status-disable-primary: var(--support-disable-primary);
+  --bg-status-disable-secondary: var(--support-disable-secondary);
+
+  --bg-status-error-primary: var(--support-error-primary);
+  --bg-status-error-secondary: var(--support-error-secondary);
+  --bg-status-error-tertiary: var(--support-error-tertiary);
+
+  --bg-status-info-primary: var(--support-info-primary);
+  --bg-status-info-secondary: var(--support-info-secondary);
+  --bg-status-info-tertiary: var(--support-info-tertiary);
+
+  --bg-status-inprogress-primary: var(--support-inprogress-primary);
+  --bg-status-inprogress-secondary: var(--support-inprogress-secondary);
+  --bg-status-inprogress-tertiary: var(--support-inprogress-tertiary);
+
+  --bg-status-success-primary: var(--support-success-primary);
+  --bg-status-success-secondary: var(--support-success-secondary);
+  --bg-status-success-tertiary: var(--support-success-tertiary);
+
+  --bg-status-warning-primary: var(--support-warning-primary);
+  --bg-status-warning-secondary: var(--support-warning-secondary);
+  --bg-status-warning-tertiary: var(--support-warning-tertiary);
+  /* overlay */
+  --bg-overlay-primary: var(--color-black-60);
+  --bg-overlay-secondary: var(--color-black-40);
+  --bg-overlay-tertiary: var(--color-black-20);
+
+  /* Text */
+  --text-base-primary: var(--color-grey-900);
+  --text-base-secondary: var(--color-grey-600);
+  --text-base-tertiary: var(--color-grey-400);
+
+  --text-base-inverse-primary: var(--color-white-400);
+  --text-base-inverse-secondary: var(--color-grey-300);
+  --text-base-inverse-tertiary: var(--color-grey-500);
+
+  --text-brand-primary: var(--brand-primary);
+  --text-brand-secondary: var(--brand-secondary);
+  --text-brand-tertiary: var(--brand-tertiary);
+
+  --text-status-disable-primary: var(--color-grey-100);
+  --text-status-disable-secondary: var(--color-grey-200);
+
+  --text-status-error-primary: var(--support-error-primary);
+  --text-status-error-secondary: var(--support-error-secondary);
+  --text-status-error-tertiary: var(--support-error-tertiary);
+
+  --text-status-inprogress-primary: var(--support-inprogress-primary);
+  --text-status-inprogress-secondary: var(--support-inprogress-secondary);
+  --text-status-inprogress-tertiary: var(--support-inprogress-tertiary);
+
+  --text-status-link-primary: var(--support-info-primary);
+  --text-status-link-secondary: var(--support-info-secondary);
+  --text-status-link-tertiary: var(--support-info-tertiary);
+
+  --text-status-success-primary: var(--support-success-primary);
+  --text-status-success-secondary: var(--support-success-secondary);
+  --text-status-success-tertiary: var(--support-success-tertiary);
+
+  --text-status-warning-primary: var(--support-warning-primary);
+  --text-status-warning-secondary: var(--support-warning-secondary);
+  --text-status-warning-tertiary: var(--support-warning-tertiary);
+
+  /* Icon */
+  --icon-base-primary: var(--color-grey-900);
+  --icon-base-secondary: var(--color-grey-600);
+  --icon-base-tertiary: var(--color-grey-400);
+
+  --icon-base-inverse-primary: var(--color-white-400);
+  --icon-base-inverse-secondary: var(--color-grey-300);
+  --icon-base-inverse-tertiary: var(--color-grey-500);
+
+  --icon-brand-primary: var(--brand-primary);
+  --icon-brand-secondary: var(--brand-secondary);
+  --icon-brand-tertiary: var(--brand-tertiary);
+
+  --icon-status-disable-primary: var(--color-grey-300);
+  --icon-status-disable-secondary: var(--color-grey-200);
+
+  --icon-status-error-primary: var(--support-error-primary);
+  --icon-status-error-secondary: var(--support-error-secondary);
+  --icon-status-error-tertiary: var(--support-error-tertiary);
+
+  --icon-status-info-primary: var(--support-info-primary);
+  --icon-status-info-secondary: var(--support-info-secondary);
+  --icon-status-info-tertiary: var(--support-info-tertiary);
+
+  --icon-status-inprogress-primary: var(--support-inprogress-primary);
+  --icon-status-inprogress-secondary: var(--support-inprogress-secondary);
+  --icon-status-inprogress-tertiary: var(--support-inprogress-tertiary);
+
+  --icon-status-success-primary: var(--support-success-primary);
+  --icon-status-success-secondary: var(--support-success-secondary);
+  --icon-status-success-tertiary: var(--support-success-tertiary);
+
+  --icon-status-warning-primary: var(--support-warning-primary);
+  --icon-status-warning-secondary: var(--support-warning-secondary);
+  --icon-status-warning-tertiary: var(--support-warning-tertiary);
+
+  /* Border */
+  --border-base-primary: var(--color-grey-100);
+  --border-base-secondary: var(--color-grey-200);
+  --border-base-tertiary: var(--color-grey-400);
+
+  --border-base-inverse-primary: var(--color-grey-900);
+  --border-base-inverse-secondary: var(--color-grey-800);
+  --border-base-inverse-tertiary: var(--color-grey-700);
+
+  --border-base-pure-black: var(--color-black-100);
+  --border-base-pure-white: var(--color-white-500);
+
+  --border-brand-primary: var(--brand-primary);
+  --border-brand-secondary: var(--brand-secondary);
+  --border-brand-tertiary: var(--brand-tertiary);
+
+  --border-brand-inverse-primary: var(--color-white-500);
+  --border-brand-inverse-secondary: var(--color-grey-50);
+  --border-brand-inverse-tertiary: var(--color-grey-100);
+
+  --border-status-disable-primary: var(--support-disable-primary);
+  --border-status-disable-secondary: var(--support-disable-secondary);
+
+  --border-status-error-primary: var(--support-error-primary);
+  --border-status-error-secondary: var(--support-error-secondary);
+  --border-status-error-tertiary: var(--support-error-tertiary);
+
+  --border-status-info-primary: var(--support-info-primary);
+  --border-status-info-secondary: var(--support-info-secondary);
+  --border-status-info-tertiary: var(--support-info-tertiary);
+
+  --border-status-inprogress-primary: var(--support-inprogress-primary);
+  --border-status-inprogress-secondary: var(--support-inprogress-secondary);
+  --border-status-inprogress-tertiary: var(--support-inprogress-tertiary);
+
+  --border-status-success-primary: var(--support-success-primary);
+  --border-status-success-secondary: var(--support-success-secondary);
+  --border-status-success-tertiary: var(--support-success-tertiary);
+
+  --border-status-warning-primary: var(--support-warning-primary);
+  --border-status-warning-secondary: var(--support-warning-secondary);
+  --border-status-warning-tertiary: var(--support-warning-tertiary);
+
+  /* Support */
+  --support-disable-primary: var(--color-grey-50);
+  --support-disable-secondary: var(--color-grey-100);
+
+  --support-error-primary: var(--color-red-700);
+  --support-error-secondary: var(--color-red-600);
+  --support-error-tertiary: var(--color-red-500);
+
+  --support-info-primary: var(--color-blue-700);
+  --support-info-secondary: var(--color-blue-600);
+  --support-info-tertiary: var(--color-blue-500);
+
+  --support-inprogress-primary: var(--color-orange-600);
+  --support-inprogress-secondary: var(--color-orange-500);
+  --support-inprogress-tertiary: var(--color-orange-400);
+
+  --support-success-primary: var(--color-green-800);
+  --support-success-secondary: var(--color-green-700);
+
+  --support-success-tertiary: var(--color-green-600);
+  --support-warning-primary: var(--color-yellow-800);
+  --support-warning-secondary: var(--color-yellow-700);
+  --support-warning-tertiary: var(--color-yellow-600);
+
+  /* Dark */
+  /* Brand */
+  --brand-dark-primary: var(--color-cornflower-500);
+  --brand-dark-secondary: var(--color-cornflower-700);
+  --brand-dark-tertiary: var(--color-cornflower-600);
+
+  /* Background */
+  /* body / app */
+  --bg-dark-body-app-grey: var(--color-grey-900);
+  --bg-dark-body-app-white: var(--color-grey-900);
+  /* body / dashboard */
+  --bg-dark-body-dashboard-grey: var(--color-grey-900);
+  --bg-dark-body-dashboard-white: var(--color-grey-900);
+  /* body / website */
+  --bg-dark-body-website-grey: var(--color-grey-900);
+  --bg-dark-body-website-white: var(--color-grey-900);
+
+  /* element */
+  /* base */
+  --bg-dark-base-primary: var(--color-grey-800);
+  --bg-dark-base-secondary: var(--color-grey-700);
+  --bg-dark-base-tertiary: var(--color-grey-600);
+  --bg-dark-base-quaternary: var(--color-grey-500);
+
+  --bg-dark-base-inverse-primary: var(--color-grey-700);
+  --bg-dark-base-inverse-secondary: var(--color-grey-600);
+  --bg-dark-base-inverse-tertiary: var(--color-grey-500);
+
+  --bg-dark-base-pure-black: var(--color-white-500);
+  --bg-dark-base-pure-white: var(--color-black-100);
+
+  /* brand */
+  --bg-dark-brand-primary: var(--brand-dark-primary);
+  --bg-dark-brand-secondary: var(--brand-dark-secondary);
+  --bg-dark-brand-tertiary: var(--brand-dark-tertiary);
+
+  --bg-dark-brand-inverse-primary: var(--color-white-500);
+  --bg-dark-brand-inverse-secondary: var(--color-grey-50);
+  --bg-dark-brand-inverse-tertiary: var(--color-grey-100);
+
+  /* dim */
+  --bg-dark-dim-blue-primary: var(--color-blue-dark-50);
+  --bg-dark-dim-blue-secondary: var(--color-blue-dark-40);
+  --bg-dark-dim-blue-tertiary: var(--color-blue-dark-30);
+
+  --bg-dark-dim-brand-primary: var(--color-cornflower-alpha-10);
+  --bg-dark-dim-brand-secondary: var(--color-cornflower-alpha-20);
+  --bg-dark-dim-brand-tertiary: var(--color-cornflower-alpha-30);
+
+  --bg-dark-dim-green-primary: var(--color-green-dark-40);
+  --bg-dark-dim-green-secondary: var(--color-green-dark-30);
+  --bg-dark-dim-green-tertiary: var(--color-green-dark-20);
+
+  --bg-dark-dim-neutral-primary: var(--color-grey-700);
+  --bg-dark-dim-neutral-secondary: var(--color-grey-600);
+  --bg-dark-dim-neutral-tertiary: var(--color-grey-500);
+
+  --bg-dark-dim-orange-primary: var(--color-orange-dark-40);
+  --bg-dark-dim-orange-secondary: var(--color-orange-dark-30);
+  --bg-dark-dim-orange-tertiary: var(--color-orange-dark-20);
+
+  --bg-dark-dim-red-primary: var(--color-red-dark-50);
+  --bg-dark-dim-red-secondary: var(--color-red-dark-40);
+  --bg-dark-dim-red-tertiary: var(--color-red-dark-30);
+
+  --bg-dark-dim-white-primary: var(--color-white-alpha-20);
+  --bg-dark-dim-white-secondary: var(--color-white-alpha-30);
+  --bg-dark-dim-white-tertiary: var(--color-white-alpha-40);
+
+  --bg-dark-dim-yellow-primary: var(--color-yellow-dark-40);
+  --bg-dark-dim-yellow-secondary: var(--color-yellow-dark-30);
+  --bg-dark-dim-yellow-tertiary: var(--color-yellow-dark-20);
+
+  /* status */
+  --bg-dark-status-disable-primary: var(--support-dark-disable-primary);
+  --bg-dark-status-disable-secondary: var(--support-dark-disable-secondary);
+
+  --bg-dark-status-error-primary: var(--support-dark-error-primary);
+  --bg-dark-status-error-secondary: var(--support-dark-error-secondary);
+  --bg-dark-status-error-tertiary: var(--support-dark-error-tertiary);
+
+  --bg-dark-status-info-primary: var(--support-dark-info-primary);
+  --bg-dark-status-info-secondary: var(--support-dark-info-secondary);
+  --bg-dark-status-info-tertiary: var(--support-dark-info-tertiary);
+
+  --bg-dark-status-inprogress-primary: var(--support-dark-inprogress-primary);
+  --bg-dark-status-inprogress-secondary: var(
+    --support-dark-inprogress-secondary
+  );
+  --bg-dark-status-inprogress-tertiary: var(--support-dark-inprogress-tertiary);
+
+  --bg-dark-status-success-primary: var(--support-dark-success-primary);
+  --bg-dark-status-success-secondary: var(--support-dark-success-secondary);
+  --bg-dark-status-success-tertiary: var(--support-dark-success-tertiary);
+
+  --bg-dark-status-warning-primary: var(--support-dark-warning-primary);
+  --bg-dark-status-warning-secondary: var(--support-dark-warning-secondary);
+  --bg-dark-status-warning-tertiary: var(--support-dark-warning-tertiary);
+
+  /* overlay */
+  --bg-dark-overlay-primary: var(--color-black-70);
+  --bg-dark-overlay-secondary: var(--color-black-50);
+  --bg-dark-overlay-tertiary: var(--color-black-30);
+
+  /* Text */
+  --text-dark-base-primary: var(--color-grey-100);
+  --text-dark-base-secondary: var(--color-grey-300);
+  --text-dark-base-tertiary: var(--color-grey-400);
+
+  --text-dark-base-inverse-primary: var(--color-white-400);
+  --text-dark-base-inverse-secondary: var(--color-grey-200);
+  --text-dark-base-inverse-tertiary: var(--color-grey-300);
+
+  --text-dark-brand-primary: var(--brand-dark-primary);
+  --text-dark-brand-secondary: var(--brand-dark-secondary);
+  --text-dark-brand-tertiary: var(--brand-dark-tertiary);
+
+  --text-dark-status-disable-primary: var(--color-grey-700);
+  --text-dark-status-disable-secondary: var(--color-grey-500);
+
+  --text-dark-status-error-primary: var(--support-dark-error-primary);
+  --text-dark-status-error-secondary: var(--support-dark-error-secondary);
+  --text-dark-status-error-tertiary: var(--support-dark-error-tertiary);
+
+  --text-dark-status-inprogress-primary: var(--support-dark-inprogress-primary);
+  --text-dark-status-inprogress-secondary: var(
+    --support-dark-inprogress-secondary
+  );
+  --text-dark-status-inprogress-tertiary: var(
+    --support-dark-inprogress-tertiary
+  );
+
+  --text-dark-status-link-primary: var(--support-dark-info-primary);
+  --text-dark-status-link-secondary: var(--support-dark-info-secondary);
+  --text-dark-status-link-tertiary: var(--support-dark-info-tertiary);
+
+  --text-dark-status-success-primary: var(--support-dark-success-primary);
+  --text-dark-status-success-secondary: var(--support-dark-success-secondary);
+  --text-dark-status-success-tertiary: var(--support-dark-success-tertiary);
+
+  --text-dark-status-warning-primary: var(--support-dark-warning-primary);
+  --text-dark-status-warning-secondary: var(--support-dark-warning-secondary);
+  --text-dark-status-warning-tertiary: var(--support-dark-warning-tertiary);
+
+  /* Icon */
+  --icon-dark-base-primary: var(--color-grey-100);
+  --icon-dark-base-secondary: var(--color-grey-400);
+  --icon-dark-base-tertiary: var(--color-grey-500);
+
+  --icon-dark-base-inverse-primary: var(--color-white-400);
+  --icon-dark-base-inverse-secondary: var(--color-grey-200);
+  --icon-dark-base-inverse-tertiary: var(--color-grey-300);
+
+  --icon-dark-brand-primary: var(--brand-dark-primary);
+  --icon-dark-brand-secondary: var(--brand-dark-secondary);
+  --icon-dark-brand-tertiary: var(--brand-dark-tertiary);
+
+  --icon-dark-status-disable-primary: var(--color-grey-600);
+  --icon-dark-status-disable-secondary: var(--color-grey-400);
+
+  --icon-dark-status-error-primary: var(--support-dark-error-primary);
+  --icon-dark-status-error-secondary: var(--support-dark-error-secondary);
+  --icon-dark-status-error-tertiary: var(--support-dark-error-tertiary);
+
+  --icon-dark-status-info-primary: var(--support-dark-info-primary);
+  --icon-dark-status-info-secondary: var(--support-dark-info-secondary);
+  --icon-dark-status-info-tertiary: var(--support-dark-info-tertiary);
+
+  --icon-dark-status-inprogress-primary: var(--support-dark-inprogress-primary);
+  --icon-dark-status-inprogress-secondary: var(
+    --support-dark-inprogress-secondary
+  );
+  --icon-dark-status-inprogress-tertiary: var(
+    --support-dark-inprogress-tertiary
+  );
+
+  --icon-dark-status-success-primary: var(--support-dark-success-primary);
+  --icon-dark-status-success-secondary: var(--support-dark-success-secondary);
+  --icon-dark-status-success-tertiary: var(--support-dark-success-tertiary);
+
+  --icon-dark-status-warning-primary: var(--support-dark-warning-primary);
+  --icon-dark-status-warning-secondary: var(--support-dark-warning-secondary);
+  --icon-dark-status-warning-tertiary: var(--support-dark-warning-tertiary);
+
+  /* Border */
+  --border-dark-base-primary: var(--color-grey-600);
+  --border-dark-base-secondary: var(--color-grey-500);
+  --border-dark-base-tertiary: var(--color-grey-400);
+
+  --border-dark-base-inverse-primary: var(--color-grey-100);
+  --border-dark-base-inverse-secondary: var(--color-grey-200);
+  --border-dark-base-inverse-tertiary: var(--color-grey-300);
+
+  --border-dark-base-pure-black: var(--color-white-400);
+  --border-dark-base-pure-white: var(--color-grey-900);
+
+  --border-dark-brand-primary: var(--brand-dark-primary);
+  --border-dark-brand-secondary: var(--brand-dark-secondary);
+  --border-dark-brand-tertiary: var(--brand-dark-tertiary);
+
+  --border-dark-brand-inverse-primary: var(--color-white-500);
+  --border-dark-brand-inverse-secondary: var(--color-grey-50);
+  --border-dark-brand-inverse-tertiary: var(--color-grey-100);
+
+  --border-dark-status-disable-primary: var(--support-dark-disable-primary);
+  --border-dark-status-disable-secondary: var(--support-dark-disable-secondary);
+
+  --border-dark-status-error-primary: var(--support-dark-error-primary);
+  --border-dark-status-error-secondary: var(--support-dark-error-secondary);
+  --border-dark-status-error-tertiary: var(--support-dark-error-tertiary);
+
+  --border-dark-status-info-primary: var(--support-dark-info-primary);
+  --border-dark-status-info-secondary: var(--support-dark-info-secondary);
+  --border-dark-status-info-tertiary: var(--support-dark-info-tertiary);
+
+  --border-dark-status-inprogress-primary: var(
+    --support-dark-inprogress-primary
+  );
+  --border-dark-status-inprogress-secondary: var(
+    --support-dark-inprogress-secondary
+  );
+  --border-dark-status-inprogress-tertiary: var(
+    --support-dark-inprogress-tertiary
+  );
+
+  --border-dark-status-success-primary: var(--support-dark-success-primary);
+  --border-dark-status-success-secondary: var(--support-dark-success-secondary);
+  --border-dark-status-success-tertiary: var(--support-dark-success-tertiary);
+
+  --border-dark-status-warning-primary: var(--support-dark-warning-primary);
+  --border-dark-status-warning-secondary: var(--support-dark-warning-secondary);
+  --border-dark-status-warning-tertiary: var(--support-dark-warning-tertiary);
+
+  /* Support */
+  --support-dark-disable-primary: var(--color-grey-700);
+  --support-dark-disable-secondary: var(--color-grey-900);
+
+  --support-dark-error-primary: var(--color-red-500);
+  --support-dark-error-secondary: var(--color-red-400);
+  --support-dark-error-tertiary: var(--color-red-300);
+
+  --support-dark-info-primary: var(--color-blue-500);
+  --support-dark-info-secondary: var(--color-blue-400);
+  --support-dark-info-tertiary: var(--color-blue-300);
+
+  --support-dark-inprogress-primary: var(--color-orange-400);
+  --support-dark-inprogress-secondary: var(--color-orange-300);
+  --support-dark-inprogress-tertiary: var(--color-orange-200);
+
+  --support-dark-success-primary: var(--color-green-600);
+  --support-dark-success-secondary: var(--color-green-500);
+  --support-dark-success-tertiary: var(--color-green-400);
+
+  --support-dark-warning-primary: var(--color-yellow-600);
+  --support-dark-warning-secondary: var(--color-yellow-500);
+  --support-dark-warning-tertiary: var(--color-yellow-400);
+
+  /* Alias: effect */
+  /* Light */
+  /* Shadow */
+  /* base */
+  --effect-shadow-base-elevation-1-position-x: 0rem;
+  --effect-shadow-base-elevation-1-spread: 0rem;
+  --effect-shadow-base-elevation-1-position-y: 0.0625rem;
+  --effect-shadow-base-elevation-1-blur: 0.5rem;
+  --effect-shadow-base-elevation-1-color: #0000001f;
+
+  --effect-shadow-base-elevation-2-position-x: 0rem;
+  --effect-shadow-base-elevation-2-spread: 0rem;
+  --effect-shadow-base-elevation-2-position-y: 0.1875rem;
+  --effect-shadow-base-elevation-2-blur: 0.75rem;
+  --effect-shadow-base-elevation-2-color: var(--color-black-10);
+
+  --effect-shadow-base-elevation-3-position-x: 0rem;
+  --effect-shadow-base-elevation-3-spread: 0rem;
+  --effect-shadow-base-elevation-3-position-y: 0.5rem;
+  --effect-shadow-base-elevation-3-blur: 2rem;
+  --effect-shadow-base-elevation-3-color: #0000001f;
+
+  /* component */
+  --effect-shadow-component-app-navbar-position-x: 0rem;
+  --effect-shadow-component-app-navbar-spread: 0rem;
+  --effect-shadow-component-app-navbar-position-y: 0.1875rem;
+  --effect-shadow-component-app-navbar-blur: 0.75rem;
+  --effect-shadow-component-app-navbar-color: var(--color-black-20);
+
+  --effect-shadow-component-slider-handle-position-x: 0rem;
+  --effect-shadow-component-slider-handle-spread: 0rem;
+  --effect-shadow-component-slider-handle-position-y: 0.0625rem;
+  --effect-shadow-component-slider-handle-blur: 0.25rem;
+  --effect-shadow-component-slider-handle-color: #0000003d;
+
+  --effect-shadow-component-tooltip-position-x: 0rem;
+  --effect-shadow-component-tooltip-spread: 0rem;
+  --effect-shadow-component-tooltip-position-y: 0.0625rem;
+  --effect-shadow-component-tooltip-blur: 0.5rem;
+  --effect-shadow-component-tooltip-color: var(--color-black-20);
+
+  /* Dark */
+  /* Shadow */
+  /* base */
+  --effect-shadow-base-elevation-1-position-x: 0rem;
+  --effect-shadow-base-elevation-1-spread: 0rem;
+  --effect-shadow-base-elevation-1-position-y: 0.0625rem;
+  --effect-shadow-base-elevation-1-blur: 0.5rem;
+  --effect-shadow-base-elevation-1-color: var(--color-black-100);
+
+  --effect-shadow-base-elevation-2-position-x: 0rem;
+  --effect-shadow-base-elevation-2-spread: 0rem;
+  --effect-shadow-base-elevation-2-position-y: 0.25rem;
+  --effect-shadow-base-elevation-2-blur: 1.5rem;
+  --effect-shadow-base-elevation-2-color: var(--color-black-90);
+
+  --effect-shadow-base-elevation-3-position-x: 0rem;
+  --effect-shadow-base-elevation-3-spread: 0rem;
+  --effect-shadow-base-elevation-3-position-y: 0.25rem;
+  --effect-shadow-base-elevation-3-blur: 2.5rem;
+  --effect-shadow-base-elevation-3-color: var(--color-black-80);
+
+  /* component */
+  --effect-shadow-component-app-navbar-position-x: 0rem;
+  --effect-shadow-component-app-navbar-spread: 0rem;
+  --effect-shadow-component-app-navbar-position-y: 0.1875rem;
+  --effect-shadow-component-app-navbar-blur: 0.75rem;
+  --effect-shadow-component-app-navbar-color: var(--color-black-80);
+
+  --effect-shadow-component-slider-handle-position-x: 0rem;
+  --effect-shadow-component-slider-handle-spread: 0rem;
+  --effect-shadow-component-slider-handle-position-y: 0.0625rem;
+  --effect-shadow-component-slider-handle-blur: 0.25rem;
+  --effect-shadow-component-slider-handle-color: #0000003d;
+
+  --effect-shadow-component-tooltip-position-x: 0rem;
+  --effect-shadow-component-tooltip-spread: 0rem;
+  --effect-shadow-component-tooltip-position-y: 0.0625rem;
+  --effect-shadow-component-tooltip-blur: 0.5rem;
+  --effect-shadow-component-tooltip-color: var(--color-black-80);
+}
