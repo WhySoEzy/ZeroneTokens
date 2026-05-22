@@ -1,6 +1,6 @@
 # The Q-library variables
 
-This folder contains the design variables for The Q-library. The variables are exported in both CSS custom properties and SCSS variable formats, so they can be used in plain CSS, Webflow custom code, Sass/SCSS projects, or as a reference when building UI systems.
+This folder introduces the design variables for The Q-library. The variables are exported in both CSS custom properties and SCSS variable formats, so they can be used in plain CSS, Webflow custom code, Sass/SCSS projects, or as a reference when building UI systems.
 
 ## Figma Community
 
@@ -85,3 +85,4 @@ Then use the variables:
 - `typography` depends on `number`, so the entry files import `number` before `typography`.
 - Dark theme aliases use the `-dark-` naming pattern, such as `$bg-dark-base-primary`, `$text-dark-base-primary`, and `$support-dark-error-primary`.
 - Number tokens use `rem` values for scalable spacing and sizing.
+
