@@ -1,44 +1,51 @@
-﻿:root {
+:root {
   /* === Alias: effect === */
   /* -- Light -- */
   /* Shadow */
   /* base */
+  /* elevation 1 */
   --effect-shadow-base-elevation-1-position-x: 0rem;
   --effect-shadow-base-elevation-1-spread: 0rem;
   --effect-shadow-base-elevation-1-position-y: 0.0625rem;
   --effect-shadow-base-elevation-1-blur: 0.25rem;
   --effect-shadow-base-elevation-1-color: #00000024;
 
+  /* elevation 2 */
   --effect-shadow-base-elevation-2-position-x: 0rem;
   --effect-shadow-base-elevation-2-spread: 0rem;
   --effect-shadow-base-elevation-2-position-y: 0.125rem;
   --effect-shadow-base-elevation-2-blur: 0.5rem;
   --effect-shadow-base-elevation-2-color: #00000024;
 
+  /* elevation 3 */
   --effect-shadow-base-elevation-3-position-x: 0rem;
   --effect-shadow-base-elevation-3-spread: 0rem;
   --effect-shadow-base-elevation-3-position-y: 0.25rem;
   --effect-shadow-base-elevation-3-blur: 0.75rem;
   --effect-shadow-base-elevation-3-color: #00000024;
 
+  /* elevation 4 */
   --effect-shadow-base-elevation-4-position-x: 0rem;
   --effect-shadow-base-elevation-4-spread: 0rem;
   --effect-shadow-base-elevation-4-position-y: 0.375rem;
   --effect-shadow-base-elevation-4-blur: 1rem;
   --effect-shadow-base-elevation-4-color: #00000029;
 
+  /* elevation 5 */
   --effect-shadow-base-elevation-5-position-x: 0rem;
   --effect-shadow-base-elevation-5-spread: 0rem;
   --effect-shadow-base-elevation-5-position-y: 0.5rem;
   --effect-shadow-base-elevation-5-blur: 1.5rem;
   --effect-shadow-base-elevation-5-color: #00000029;
 
+  /* elevation 6 */
   --effect-shadow-base-elevation-6-position-x: 0rem;
   --effect-shadow-base-elevation-6-spread: 0rem;
   --effect-shadow-base-elevation-6-position-y: 0.75rem;
   --effect-shadow-base-elevation-6-blur: 2rem;
   --effect-shadow-base-elevation-6-color: #00000033;
 
+  /* elevation 7 */
   --effect-shadow-base-elevation-7-position-x: 0rem;
   --effect-shadow-base-elevation-7-spread: 0rem;
   --effect-shadow-base-elevation-7-position-y: 1rem;
@@ -46,18 +53,21 @@
   --effect-shadow-base-elevation-7-color: #00000033;
 
   /* component */
+  /* app navbar */
   --effect-shadow-component-app-navbar-position-x: 0rem;
   --effect-shadow-component-app-navbar-spread: 0rem;
   --effect-shadow-component-app-navbar-position-y: 0.5rem;
   --effect-shadow-component-app-navbar-blur: 2rem;
   --effect-shadow-component-app-navbar-color: var(--color-black-20);
 
+  /* slider handle */
   --effect-shadow-component-slider-handle-position-x: 0rem;
   --effect-shadow-component-slider-handle-spread: 0rem;
   --effect-shadow-component-slider-handle-position-y: 0.0625rem;
   --effect-shadow-component-slider-handle-blur: 0.25rem;
   --effect-shadow-component-slider-handle-color: #0000003d;
 
+  /* tooltip */
   --effect-shadow-component-tooltip-position-x: 0rem;
   --effect-shadow-component-tooltip-spread: 0rem;
   --effect-shadow-component-tooltip-position-y: 0.0625rem;
@@ -67,42 +77,49 @@
   /* -- Dark -- */
   /* Shadow */
   /* base */
+  /* elevation 1 */
   --effect-shadow-base-elevation-1-position-x: 0rem;
   --effect-shadow-base-elevation-1-spread: 0rem;
   --effect-shadow-base-elevation-1-position-y: 0.0625rem;
   --effect-shadow-base-elevation-1-blur: 0.25rem;
   --effect-shadow-base-elevation-1-color: #00000099;
 
+  /* elevation 2 */
   --effect-shadow-base-elevation-2-position-x: 0rem;
   --effect-shadow-base-elevation-2-spread: 0rem;
   --effect-shadow-base-elevation-2-position-y: 0.125rem;
   --effect-shadow-base-elevation-2-blur: 0.5rem;
   --effect-shadow-base-elevation-2-color: #00000099;
 
+  /* elevation 3 */
   --effect-shadow-base-elevation-3-position-x: 0rem;
   --effect-shadow-base-elevation-3-spread: 0rem;
   --effect-shadow-base-elevation-3-position-y: 0.25rem;
   --effect-shadow-base-elevation-3-blur: 0.75rem;
   --effect-shadow-base-elevation-3-color: #000000a6;
 
+  /* elevation 4 */
   --effect-shadow-base-elevation-4-position-x: 0rem;
   --effect-shadow-base-elevation-4-spread: 0rem;
   --effect-shadow-base-elevation-4-position-y: 0.375rem;
   --effect-shadow-base-elevation-4-blur: 1rem;
   --effect-shadow-base-elevation-4-color: #000000a6;
 
+  /* elevation 5 */
   --effect-shadow-base-elevation-5-position-x: 0rem;
   --effect-shadow-base-elevation-5-spread: 0rem;
   --effect-shadow-base-elevation-5-position-y: 0.5rem;
   --effect-shadow-base-elevation-5-blur: 1.5rem;
   --effect-shadow-base-elevation-5-color: #000000b2;
 
+  /* elevation 6 */
   --effect-shadow-base-elevation-6-position-x: 0rem;
   --effect-shadow-base-elevation-6-spread: 0rem;
   --effect-shadow-base-elevation-6-position-y: 0.75rem;
   --effect-shadow-base-elevation-6-blur: 2rem;
   --effect-shadow-base-elevation-6-color: #000000b2;
 
+  /* elevation 7 */
   --effect-shadow-base-elevation-7-position-x: 0rem;
   --effect-shadow-base-elevation-7-spread: 0rem;
   --effect-shadow-base-elevation-7-position-y: 1rem;
@@ -110,23 +127,24 @@
   --effect-shadow-base-elevation-7-color: #000000bf;
 
   /* component */
+  /* app navbar */
   --effect-shadow-component-app-navbar-position-x: 0rem;
   --effect-shadow-component-app-navbar-spread: 0rem;
   --effect-shadow-component-app-navbar-position-y: 0.25rem;
   --effect-shadow-component-app-navbar-blur: 2.5rem;
   --effect-shadow-component-app-navbar-color: var(--color-black-80);
 
+  /* slider handle */
   --effect-shadow-component-slider-handle-position-x: 0rem;
   --effect-shadow-component-slider-handle-spread: 0rem;
   --effect-shadow-component-slider-handle-position-y: 0.0625rem;
   --effect-shadow-component-slider-handle-blur: 0.25rem;
   --effect-shadow-component-slider-handle-color: #0000003d;
 
+  /* tooltip */
   --effect-shadow-component-tooltip-position-x: 0rem;
   --effect-shadow-component-tooltip-spread: 0rem;
   --effect-shadow-component-tooltip-position-y: 0.0625rem;
   --effect-shadow-component-tooltip-blur: 0.5rem;
   --effect-shadow-component-tooltip-color: var(--color-black-80);
 }
-
-
