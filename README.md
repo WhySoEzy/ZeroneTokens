@@ -4,8 +4,8 @@ This folder introduces the design variables for Zerone library. The variables ar
 
 ## Figma Community
 
-- 2.0 Official: [Get now](https://www.figma.com/community/file/1420604836785710311/the-q-library-2-0)
-- 2.0 Lite: [Get now](https://www.figma.com/community/file/1501123476616291541/the-q-library-2-0-lite)
+- 2.0: [Get now](https://www.figma.com/community/file/1420604836785710311/zerone-library-2-0)
+- 2.0 Lite: [Get now](https://www.figma.com/community/file/1501123476616291541/zerone-library-2-0-lite)
 
 ## Files
 
@@ -85,5 +85,3 @@ Then use the variables:
 - `typography` depends on `number`, so the entry files import `number` before `typography`.
 - Dark theme aliases use the `-dark-` naming pattern, such as `$bg-dark-base-primary`, `$text-dark-base-primary`, and `$support-dark-error-primary`.
 - Number tokens use `rem` values for scalable spacing and sizing.
-
-
