@@ -1,3 +1,4 @@
+/* Zerone CSS tokens */
 :root {
   /* === Global === */
   /* -- Brand -- */
@@ -795,5 +796,3 @@
   --support-dark-warning-secondary: var(--color-yellow-500);
   --support-dark-warning-tertiary: var(--color-yellow-400);
 }
-
-
