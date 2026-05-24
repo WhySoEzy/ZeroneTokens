@@ -1,6 +1,6 @@
-# Zerone library variables
+# Zerone library tokens
 
-This folder introduces the design variables for Zerone library. The variables are exported in both CSS custom properties and SCSS variable formats, so they can be used in plain CSS, Webflow custom code, Sass/SCSS projects, or as a reference when building UI systems.
+This folder introduces the design tokens for Zerone library. The tokens are exported in both CSS custom properties and SCSS variable formats, so they can be used in plain CSS, Webflow custom code, Sass/SCSS projects, or as a reference when building UI systems.
 
 ## Figma Community
 
@@ -10,7 +10,7 @@ This folder introduces the design variables for Zerone library. The variables ar
 ## Files
 
 ```txt
-Zerone library variables
+The structures
 |-- css
 |   |-- app.css
 |   |-- color.css
@@ -74,6 +74,51 @@ Then use the variables:
   background-color: $bg-brand-primary;
   border-radius: $radius-component-button;
   font-size: $font-size-web-component-button-base;
+}
+```
+
+## Framework Usage
+
+You can use Zerone library tokens in modern frontend frameworks by importing the CSS entry file into your main entry file.
+
+### React / Vite
+
+```js
+import "./css/app.css";
+```
+
+### Next.js
+
+```js
+import "./css/app.css";
+```
+
+For Next.js App Router, import it in `app/layout.js` or `app/layout.tsx`.
+
+### Vue
+
+```js
+import "./css/app.css";
+```
+
+### Svelte / SvelteKit
+
+```js
+import "./css/app.css";
+```
+
+### Astro
+
+```js
+import "./css/app.css";
+```
+
+After importing, use the tokens in your CSS:
+
+```css
+.button {
+  color: var(--text-base-primary);
+  background-color: var(--bg-brand-primary);
 }
 ```
 
